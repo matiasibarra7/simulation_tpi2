@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/simulation_tpi2/static/css/main.eedad384.chunk.css",
-    "main.js": "/simulation_tpi2/static/js/main.615e66a0.chunk.js",
-    "main.js.map": "/simulation_tpi2/static/js/main.615e66a0.chunk.js.map",
+    "main.css": "/simulation_tpi2/static/css/main.3223a7e6.chunk.css",
+    "main.js": "/simulation_tpi2/static/js/main.ad6bf93f.chunk.js",
+    "main.js.map": "/simulation_tpi2/static/js/main.ad6bf93f.chunk.js.map",
     "runtime-main.js": "/simulation_tpi2/static/js/runtime-main.811fbff7.js",
     "runtime-main.js.map": "/simulation_tpi2/static/js/runtime-main.811fbff7.js.map",
     "static/js/2.5f160eb4.chunk.js": "/simulation_tpi2/static/js/2.5f160eb4.chunk.js",
     "static/js/2.5f160eb4.chunk.js.map": "/simulation_tpi2/static/js/2.5f160eb4.chunk.js.map",
     "index.html": "/simulation_tpi2/index.html",
-    "static/css/main.eedad384.chunk.css.map": "/simulation_tpi2/static/css/main.eedad384.chunk.css.map",
+    "static/css/main.3223a7e6.chunk.css.map": "/simulation_tpi2/static/css/main.3223a7e6.chunk.css.map",
     "static/js/2.5f160eb4.chunk.js.LICENSE.txt": "/simulation_tpi2/static/js/2.5f160eb4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.811fbff7.js",
     "static/js/2.5f160eb4.chunk.js",
-    "static/css/main.eedad384.chunk.css",
-    "static/js/main.615e66a0.chunk.js"
+    "static/css/main.3223a7e6.chunk.css",
+    "static/js/main.ad6bf93f.chunk.js"
   ]
 }
