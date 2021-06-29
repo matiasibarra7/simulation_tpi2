@@ -319,7 +319,7 @@ function App() {
       ctcp: ctcp,
       pv: pv,
       tpvp: tpvp,
-      tcvp: tcvp,
+      tcvp: tpvp * 60,
       cbp: cbp,
     }
     setDataResult(dataResult)
@@ -478,25 +478,25 @@ function App() {
                 <span className="alpha-aclaration">Alpha utilizado: 0.05</span>
                 
                 <div className="m-2">
-                  <div><b>TPVP (Kg):</b></div>
+                  <div><b>TPVP - Total de kg de venta de pan perdida (Kg):</b></div>
                   <div>{ `IC: [${(intervaloDeConfianzaTpvp[0]).toFixed(4)} - ${(intervaloDeConfianzaTpvp[1]).toFixed(4)}]` }</div>
                   <div>{ `Media: ${((intervaloDeConfianzaTpvp[1] + intervaloDeConfianzaTpvp[0]) / 2).toFixed(4)}` }</div>
                   <div>{ `Amplitud del IC: ${(intervaloDeConfianzaTpvp[1] - intervaloDeConfianzaTpvp[0]).toFixed(4)}` }</div>
                 </div>
                 <div className="m-2">
-                  <div><b>PV (Kg):</b></div>
-                  <div>{ `IC: [${(intervaloDeConfianzaPv[0]).toFixed(4)} - ${(intervaloDeConfianzaPv[1]).toFixed(4)}]`}</div>
-                  <div>{ `Media: ${((intervaloDeConfianzaPv[1] + intervaloDeConfianzaPv[0]) / 2 ).toFixed(4)}` }</div>
-                  <div>{ `Amplitud del IC: ${(intervaloDeConfianzaPv[1] - intervaloDeConfianzaPv[0]).toFixed(4)}` }</div>
-                </div>
-                <div className="m-2">
-                  <div><b>TCVP ($):</b></div>
+                  <div><b>TCVP - Total costo de venta pérdida ($):</b></div>
                   <div>{ `IC: [${(intervaloDeConfianzaTcvp[0]).toFixed(4)} - ${(intervaloDeConfianzaTcvp[1]).toFixed(4)}]`}</div>
                   <div>{ `Media: ${((intervaloDeConfianzaTcvp[1] + intervaloDeConfianzaTcvp[0]) / 2 ).toFixed(4)}` }</div>
                   <div>{ `Amplitud del IC: ${(intervaloDeConfianzaTcvp[1] - intervaloDeConfianzaTcvp[0]).toFixed(4)}` }</div>
                 </div>
                 <div className="m-2">
-                  <div><b>CTCP ($):</b></div>
+                  <div><b>PV - Pan vendido total (Kg):</b></div>
+                  <div>{ `IC: [${(intervaloDeConfianzaPv[0]).toFixed(4)} - ${(intervaloDeConfianzaPv[1]).toFixed(4)}]`}</div>
+                  <div>{ `Media: ${((intervaloDeConfianzaPv[1] + intervaloDeConfianzaPv[0]) / 2 ).toFixed(4)}` }</div>
+                  <div>{ `Amplitud del IC: ${(intervaloDeConfianzaPv[1] - intervaloDeConfianzaPv[0]).toFixed(4)}` }</div>
+                </div>
+                <div className="m-2">
+                  <div><b>CTCP - Costo total de compra de pan ($):</b></div>
                   <div>{ `IC: [${(intervaloDeConfianzaCtcp[0]).toFixed(4)} - ${(intervaloDeConfianzaCtcp[1]).toFixed(4)}]`}</div>
                   <div>{ `Media: ${((intervaloDeConfianzaCtcp[1] + intervaloDeConfianzaCtcp[0]) / 2 ).toFixed(4)}` }</div>
                   <div>{ `Amplitud del IC: ${(intervaloDeConfianzaCtcp[1] - intervaloDeConfianzaCtcp[0]).toFixed(4)}` }</div>
@@ -524,7 +524,7 @@ function App() {
               <h4>Resultados de la última réplica</h4>
               <div>El costo total de compra de pan: {dataResult.ctcp}</div>
               <div>Total de pan vendido: {dataResult.pv}</div>
-              <div>Total de pan perdido: {dataResult.tpvp}</div>
+              <div>Total venta pérdida en kg: {dataResult.tpvp}</div>
               <div>Costo total de venta pérdida: {dataResult.tcvp}</div>
               <div>Costo de búsqueda total : {dataResult.cbp}</div>
             </div>
